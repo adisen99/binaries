@@ -43,24 +43,25 @@ The DOI obtained from the pdf2doi script can then be plugged into the doi2bib bi
 The following is a usage of both the binaries on a very intriguing paper on the Three Body problem and Machine Learning -
 
 ```console
-foo@bar:~$ pdf2doi three\ body\ problem.pdf
-10.1007/BF01386092
+foo@bar:~$ pdf2doi magnetic\ resonance.pdf
+10.1119/1.5135797
 foo@bar:~$ doi2bib 10.1007/BF01386092
-@article{Bulirsch_1964,
-	doi = {10.1007/bf01386092},
-	url = {https://doi.org/10.1007%2Fbf01386092},
-	year = 1964,
+@article{Cookson_2019,
+	doi = {10.1119/1.5135797},
+	url = {https://doi.org/10.1119%2F1.5135797},
+	year = 2019,
 	month = {dec},
-	publisher = {Springer Science and Business Media {LLC}},
-	volume = {6},
-	number = {1},
-	pages = {413--427},
-	author = {Roland Bulirsch and Josef Stoer},
-	title = {Fehlerabsch�tzungen und Extrapolation mit rationalen Funktionen bei Verfahren vom Richardson-Typus},
-	journal = {Numerische Mathematik}
+	publisher = {American Association of Physics Teachers ({AAPT})},
+	volume = {57},
+	number = {9},
+	pages = {633--635},
+	author = {Esther Cookson and David Nelson and Michael Anderson and Daniel L. McKinney and Igor Barsukov},
+	title = {Exploring Magnetic Resonance with a Compass},
+	journal = {The Physics Teacher}
+}
 ```
 
-The paper which I am talking about is this one - [Newton vs the machine: solving the chaotic three-body problem using deep neural networks](https://arxiv.org/abs/1910.07291) by Philip G. Breen et. al.
+The paper which I am talking about is this one - [Exploring Magnetic Resonance with a Compass](https://arxiv.org/abs/1810.11141) by Esther Cookson et. al.
 
 This will hopefully help in reducing the time it takes to get access of the bibtex of a file especially if you mostly keep your research articles locally on your maching and don't like using and maintaining personal online libraries like [Mendeley](https://www.mendeley.com/?interaction_required=true)
 
