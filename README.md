@@ -44,7 +44,7 @@ The following is a usage of both the binaries on a very intriguing paper on the 
 
 ```console
 foo@bar:~$ pdf2doi magnetic\ resonance.pdf
-10.1119/1.5135797
+10.1007/BF01386092
 foo@bar:~$ doi2bib 10.1007/BF01386092
 @article{Cookson_2019,
 	doi = {10.1119/1.5135797},
