@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # https://gitlab.com/uoou/dotfiles/-/tree/master/stow/bin/home/drew/.local/bin/pop
 
