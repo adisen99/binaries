@@ -1,0 +1,7 @@
+#!/bin/sh
+
+nvim $1 -c ":hardcopy > abc.ps" -c ":q"
+ps2pdf abc.ps out.pdf
+rm abc.ps
+
+
