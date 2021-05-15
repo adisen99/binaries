@@ -1,7 +1,9 @@
 #!/bin/sh
 
-nvim $1 -c ":hardcopy > abc.ps" -c ":q"
-ps2pdf abc.ps out.pdf
+#Made by Aditya Sengupta (https://github.com.adisen99)
+
+vim $1 -c ":hardcopy > abc.ps" -c ":q"
+ps2pdf abc.ps ${1%%.*}.pdf
 rm abc.ps
 
 

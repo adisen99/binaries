@@ -65,5 +65,37 @@ The paper which I am talking about is this one - [Exploring Magnetic Resonance w
 
 This will hopefully help in reducing the time it takes to get access of the bibtex of a file especially if you mostly keep your research articles locally on your maching and don't like using and maintaining personal online libraries like [Mendeley](https://www.mendeley.com/?interaction_required=true)
 
+## 2df 
+
+2pdf is a helpful script to run on linux machines to convert your program files or scripts into a pdf document to get a pdf copy of your program to attach on a lab notebook or use as supplementary documentation for your project or paper. To use the script you need the following dependencies -
+
+```
+ghostscript
+
+vim
+```
+
+Most linux distributions come pre-installed with vim. If not available you can easily install vim using the package manager of your system and using `Homebrew` on MacOS and `chocolatey` on Windows. I am not adding links here because I am too lazy.
+
+Install ghostscript using you system's package manager -
+
+```
+pacman -Syu ghostscript
+
+apt install ghostscript
+
+dnf install ghostscript
+```
+
+USAGE -
+
+```
+2pdf <name of the code/program file or script with extension>
+```
+
+OUTPUT -
+
+You will get the output as a pdf of the same name as the input file name so if you are using the script on say `main.py` and after that on `main.cpp` then the script will generate `main.pdf` and override the previous document so make sure to keep this in mind. Hope this helps
+
 **Happy Coding!!**
 _____________________________________________________________________________________________________________________________
