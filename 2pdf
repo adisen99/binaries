@@ -2,8 +2,8 @@
 
 #Made by Aditya Sengupta (https://github.com.adisen99)
 
-vim $1 -c ":hardcopy > abc.ps" -c ":q"
-ps2pdf abc.ps ${1%%.*}.pdf
+filename=$1
+
+vim ${filename:?"no filename entered"} -c ":hardcopy > abc.ps" -c ":q"
+ps2pdf abc.ps ${filename%%.*}.pdf
 rm abc.ps
-
-
