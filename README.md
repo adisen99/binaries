@@ -38,7 +38,7 @@ foo@bar:~$ pdf2doi <insert name of file>.pdf
 
 ## DOI2BIB
 
-The DOI obtained from the pdf2doi script can then be plugged into the doi2bib binary script to obtain the [bibtex](http://www.bibtex.org/) Metadata and can be used in `References.bib` files for adding bibliography to your TeX or Markdown documents.
+The DOI obtained from the `pdf2doi` script can then be plugged into the `doi2bib` binary script to obtain the [bibtex](http://www.bibtex.org/) Metadata and can be used in `References.bib` files for adding bibliography to your TeX or Markdown documents.
 
 The following is a usage of both the binaries on a very intriguing paper on the Three Body problem and Machine Learning -
 
@@ -65,7 +65,7 @@ The paper which I am talking about is this one - [Exploring Magnetic Resonance w
 
 This will hopefully help in reducing the time it takes to get access of the bibtex of a file especially if you mostly keep your research articles locally on your maching and don't like using and maintaining personal online libraries like [Mendeley](https://www.mendeley.com/?interaction_required=true)
 
-## 2df 
+## 2pdf 
 
 2pdf is a helpful script to run on linux machines to convert your program files or scripts into a pdf document to get a pdf copy of your program to attach on a lab notebook or use as supplementary documentation for your project or paper. To use the script you need the following dependencies -
 
@@ -96,6 +96,18 @@ USAGE -
 OUTPUT -
 
 You will get the output as a pdf of the same name as the input file name so if you are using the script on say `main.py` and after that on `main.cpp` then the script will generate `main.pdf` and override the previous document so make sure to keep this in mind. Hope this helps
+
+## png2mp4
+
+The `png2mp4` script takes the `png` images in the `images` folder of the current directory and then converts them into an `mp4` video format using the `ffmpeg` program.
+
+**dependencies** - `ffmpeg`
+
+**usage** -
+
+```
+png2mp4 <framerate arg>
+```
 
 **Happy Coding!!**
 _____________________________________________________________________________________________________________________________
